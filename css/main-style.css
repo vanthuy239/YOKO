@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: Roboto;
+/*	font từ 2 từ thì bỏ vô ngoặc*/
+	font-size: 14px;
+	margin: 0;
+	color: #555555;
+	background-color: #fff;
+}
+
+body a{
+	text-decoration: none;
+}
+
+body p{
+/*	word-spacing: 3px;*/
+}
+
+h1{font-size:24px}
+h2{font-size:20px}
+h3{font-size:16px}
+
+header{
+	background-color: #FFF;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+}
+
+a#logo {
+	display: block; 
+	width: 14%;
+}
+/*a#logo>img{width: 75%}*/
+.nav-bar{
+/*	box-shadow: 0 5px 5px rgba(0,0,0,0.1);*/
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*MAIN MENU*/
+div#main-menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+div#main-menu>ul>li{ position: relative}
+div#main-menu>ul>li a{
+	color: #012169;
+	text-decoration: none;
+	margin: 10px 0 0px 30px;
+	padding-bottom: 10px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 500;	
+}
+div#main-menu>ul>li>a{border-bottom: 4px solid white}
+div#main-menu>ul>li>a:hover{
+/*	background-color: #FFC113;*/
+	color: #C8102E;
+	border-bottom: 4px solid #C8102E;
+}
+
+/*SUB MENU*/
+div#main-menu ul ul{
+	display: block;
+	position: absolute;
+	left: 30px; top: 100%;
+	background: #012169;
+	width: 245px;
+	display: none;
+/*	border-radius: 15px*/
+}
+
+div#main-menu ul ul li a{
+	font-size: 14px;
+	color: #fff;
+	margin: 0;
+	padding: 12px;
+}
+div#main-menu ul ul li a:hover{background-color: #C8102E; color: #fff; transition: 0.3s all}
+div#main-menu ul li:hover > ul{display:block}
+div#main-menu ul li:nth-child(6n)>ul {width: 195px}
+
+/*FOOTER*/
+/*section 1*/
+footer{box-shadow: 0 5px 5px rgba(0,0,0,0.2); color: #FFF}
+footer p{
+	line-height: 22.5px;
+	color: #FFFFFF;
+/*	margin-bottom: 8px;*/
+}
+footer p i{color: white; margin-right: 8px}
+img#footer-logo{
+	margin-bottom: 15px;
+}
+
+footer h1{font-weight: 500;
+	line-height: 23px;
+	margin-bottom: 20px;}
+
+/*section 2*/
+footer div.social-icon{display: flex; justify-content: center; margin-bottom: 40px}
+footer div.social-icon>span{margin-right: 10px; text-align: center; border-radius: 10px}
+footer div.social-icon>span a{color: #FFF; padding: 5px 10px; display: block;font-size: 30px}
+footer div.social-icon>span:hover {transform: scale(0.9, 0.9); transition: all 0.4s; opacity: 0.8}
+footer div.social-icon~img{width: 70%; margin: 0 45px}
+
+footer hr{width: 85%}
+
+/*address*/
+footer div.address span i{color: white; margin-right: 10px}
+footer div.address a{color: #00ABEE; line-height: 16px; font-size: 16px; font-weight: 500; font-style: italic; margin-left: 25px}
+footer div.bg-secondary p{margin: 10px 0; font-size: 13px; line-height: 13px; text-align: center; font-weight: 500}
+
+.backtoTop{
+	background: #C8102E;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 60px; height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	color: white;
+/*	box-shadow: 2px 2px 5px #066;*/
+}
+
+div#banner{position: relative; margin-bottom: 15px}
+
+/*ABOUT-YOKO;*/
+div.about-yoko{width: 50%; margin: 0 auto; margin-bottom: 20px}
+div.about-yoko h1{font-size: 28px; line-height: 28px; color: #233B5E; font-weight: 600}
+div.about-yoko p{font-size: 20px; line-height: 30px; color: #898989; font-weight: 500}
+div.about-yoko img{width: 30%}
+
+/*INTRODUCTION*/
+div.intro{}
+div.intro h1{font-size: 28px; line-height: 36.4px; color: #233B5E; font-weight: 600}
+div.intro h1>span{font-size: 16px; line-height: 22.4px; color: #233B5E; font-weight: 600}
+div.intro p{font-size: 16px; line-height: 24px; color: #000000; word-spacing: 2px}
+div.intro a.see-more{font-siz: 13px; line-height: 13px; color: #000000; font-weight: 600}
+div.intro a.see-more:hover{color: #EC1D24; border-bottom: 2px solid #EC1D24}
+
+/*WHY CHOOSE US*/
+div.why-choose-us h1{font-size: 22px; line-height: 22px; color: #233B5E; font-weight: 600}
+div.why-choose-us p{font-size: 16px; line-height: 24px; color: #000000; word-spacing: 2px}
+
+
+.box1 img,.box1:after,.box1:before{width:100%;transition:all .3s ease 0s}
+.box1 {overflow: hidden}
+.box1 .icon,.box1 .title{margin:0;position:absolute}
+.box1{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
+.box1:after,.box1:before{height:50%;background:rgba(0,0,0,.5);position:absolute;top:0;left:0;z-index:1;transform-origin:100% 0;transform:rotateZ(90deg);content:""}
+.box1:after{top:auto;bottom:0;transform-origin:0 100%}
+.box1:hover:after,.box1:hover:before{transform:rotateZ(0)}
+.box1 img{height:auto;transform:scale(1) rotate(0)}
+.box1:hover img{transform:scale(1.3) rotate(10deg)}
+.box1 .title{font-size:19px;font-weight:600;color:#fff;text-transform:uppercase;text-shadow:0 0 1px #004cbf;bottom:10px;left:10px;opacity:0;z-index:2;transform:scale(0);transition:all .5s ease .2s}
+.box1:hover .title{opacity:1;transform:scale(1)}
+.box1 .icon{padding:7px 5px;list-style:none;background:#004cbf;border-radius:0 0 0 10px;top:-100%;right:0;z-index:2;transition:all .3s ease .2s}
+.box1:hover .icon{top:0}
+.box1 .icon li{display:block;margin:10px 0}
+.box1 .icon li a{display:block;width:35px;height:35px;line-height:35px;border-radius:10px;font-size:18px;color:#fff;transition:all .3s ease 0s}
+.box1 .icon li a:hover{color:#fff;box-shadow:0 0 10px #000 inset,0 0 0 3px #fff}
+
+/*SERVICES*/
+div.services {padding: 30px}
+div.services img{width: 100%}
+div.services h1{font-size: 25px; line-height: 32.5px; color: #FFFFFF;}
+div.services h1~p{font-size: 16px; line-height: 24px; color: #FFFFFF;}
+div.box-service{background-color: #FFF; border-radius: 5px; border: 2px solid #BDB8B8}
+div.box-service div.frame{overflow: hidden;}
+div.box-service div.frame:hover>img{transition: all 1.5s ease 0s; transform: scale(1.3); filter: brightness(66%)}
+div.box-content{padding: 0 15px; margin-bottom: 30px}
+div.box-service h2{font-size: 20px; line-height: 30px; color: #000; margin: 15px 0}
+div.box-content>p{font-size: 15px; line-height: 22.5px; color: #000; margin-bottom: 52.5px}
+div.box-content span.see-more-1{padding: 10px 20px; border: 1px solid #00ABEE; border-radius:20px}
+div.box-content span.see-more-1>a{font-size: 15px; line-height: 15px; color: #00ABEE}
+div.box-content span.see-more-1:hover{background:#00ABEE; transition: all 0.3s ease 0s}
+div.box-content span.see-more-1:hover > a{color: #FFF; border-bottom: 1px solid #FFF; transition: all 0.3s ease 0s}
+
+
+/*----------------------------- VE CHUNG TOI ------------------------------*/
+section.intro-banner{background-image: url("../image/Banner-van-phong-yoko.jpg");background-position: center center;
+    background-size: cover;transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+    padding: 350px 200px 50px 200px; margin-bottom: 30px}
+div.intro-banner-caption>h1{display: block;font-size: 26px; line-heigh: 33.8px; color: #FFF; margin-bottom: 20px}
+div.intro-banner-caption>p{text-align: justify; font-size: 16px; line-heigh: 24px; color: #FFF; word-spaing: 3px}
+div.intro-bg{padding: 30px 25px 25px 25px;transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;border-radius: 40px 40px 40px 40px;
+background-color: #0e203a; opacity: 0.8}
+
+.intro-start {margin-bottom: 30px}
+.intro-start h5{font-size:18px; color: #8D8D8D; margin: 20px 0}
+.intro-start h1{font-size:25px; color: #000000; }
+.intro-start p{font-size:16px; line-height: 24px; color: #000000; }
+.intro-start h2{font-size: 32px; color: #233B5E; text-align: center; margin: 0 }
+.intro-start span>p{font-size: 14px; line-height: 21px; color: #2F6681; text-align: center; margin: 0; font-weight: 600}
+
+/*TAM NHIN*/
+.intro-content h3{font-size: 18px; color: #233B5E; margin: 0; font-weight: 500}
+.intro-content h1{font-size: 30px; color: #233B5E; margin: 0}
+.intro-content p{font-size: 17px; line-height: 25.5px; color: #505050; font-weight: 500}
+
+/*SU MENH*/
+.mission-content {background-color: #446b8e; padding: 25px}
+.mission-content>h1{font-size: 25px; color: #FFF}
+.mission-content>p{font-size: 15px; line-height: 22.5px; color: #FFF; font-weight: 400}
+
+/*GIA TRI COT LOI*/
+.value-section>h1{margin-bottom: 30px}
+.value-box{display: flex; justify-content: center;padding: 5px 0;}
+.value-caption{box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+    padding: 20px 30px 30px 30px; color: #FFF ;border-radius: 30px 30px 30px 30px; width: 90%;}
+.value-caption>h1{font-size: 23px; color: #233B5E; margin: 15px}
+.value-caption>p{font-size: 16px; line-height: 24px; color: #000000; font-weight: 400; word-spacing: 3px}
+
+
+

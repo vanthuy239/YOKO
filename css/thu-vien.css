@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+/* yêu cầu các box khi thêm đường viền hoặc padding thì thêm vào trong (inside) */
+*{box-sizing : border-box}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{padding: 15px;}
+
+.container
+{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+.row
+{
+	display: flex;
+	/* các thành phần trong nó sẽ sát nhau */
+	
+	flex-wrap: wrap;
+	/* Khi width trên 1 hàng đạt tới 100% các thành phần sau đó sẽ tự động xuống hàng */
+}
+
+/*------------backround color lib---------------*/
+.bg-primary {background-color: #233b5e}
+.bg-secondary{ background-color:#0e203a }
+.bg-gmail{background-color: #EA4335}
+.bg-fb{background-color: #4267B2}
+.bg-ytb{background-color: #FF0000}
+.bg-gray{background-color: #272f31}
+
+/*------------text color lib---------------*/
+.text-light { color: #fff}
+.text-primary{color: #056CB6}
+.text-secondary{color: #F2C94C}
+.cl-fbook{color: #4267B2}
+.cl-ytube{color: #FF0000}
+.cl-gmail{color: #EA4335}
+.cl-twit{color: #1DA1F2}
+
+/*------------text-align lib---------------*/
+.text-ct {text-align: center}
+.text-right {text-align: right}
+
+/*-----------text transform-----------------*/
+.text-uppercase{text-transform: uppercase}
+
+/*font-lib*/
+.f-m{font-weight: 500}
+.font-bold{font-weight: bold}
+
+/*--------------padding, margin------------*/
+.margin-0{margin: 0}
+.margin-5{margin: 5px}
+.mg-t-bt-30{margin: 30px 0!important}
+.mg-bt-30{margin-bottom: 30px !important}
+
+.pd-0{padding: 0}
+.pd-5{padding: 5px}
+.pd-20{padding: 20px}
+.pd-1-0{padding: 1px 0}
+.pd-t-30{padding-top:30px}
+
+.img-full{width: 100%}
+.img-100{width: 100%}
+.opacity-50{opacity: 0.5}
+
+
+/*-------------POSITION CLASS---------------*/
+.relative{position: relative}
+.sticky{position: sticky}
+.absolute{position: absolute}
+.index-1{z-index:1}
+
+/*----------display------------*/
+.flex{display: flex;}
+.inline-block{display: inline-block}
+
+/*------------justify content---------------*/
+.fl-between-ct{display: flex; justify-content: space-between; align-items: center}
+.fl-ct{display: flex; justify-content: center}
+
+/*------------align items -----------------*/
+.items-center{align-items: center}
+
+.w-186 {width: 186px}
+
+/*-------------- style for ipad --------------------*/
+@media(min-width: 600px)
+{
+	.col-md-1{width: 8.33%}
+	.col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+
+@media(min-width: 1000px)
+{
+	.col-lg-1{width: 8.33%}
+	.col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+
